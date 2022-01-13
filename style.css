@@ -1,0 +1,204 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+/*header*/
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  margin-bottom: 100px;
+}
+#nb {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#nb a:hover {
+  background-color: none;
+  color: #00b39b;
+}
+#nb a:active {
+  background-color: none;
+  color: #00b39b;
+}
+#nb li {
+  padding-left: 0.6cm;
+}
+#nb li a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+#logo {
+  width: 268px;
+  height: 33px;
+}
+#navbar {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+/*header*/
+/*blocks*/
+.selectcountry {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 80px;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
+  font-family: Work Sans, Arial, sans-serif;
+}
+.selectcountry option {
+  color: black;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 0.5;
+  font-family: Work Sans, Arial, sans-serif;
+}
+
+#blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin: 170px;
+}
+
+#block {
+  border-radius: 10px;
+  padding: 32px 32px 50px;
+  overflow: hidden;
+  height: 270px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  text-align: left;
+  background-color: #00b39b;
+}
+
+.blocktitle {
+  font-size: 1.7em;
+  font-weight: 400;
+  color: #fff;
+  margin: 0.3em 0;
+}
+.blockp {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+  font-family: Work Sans, Arial, sans-serif;
+}
+
+/*******/
+/* main */
+/* introduction part CSS */
+#introduction {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 80%; */
+  margin: 8%;
+}
+#introduction div {
+  display: flex;
+}
+
+#introduction h1 {
+  font-family: "Work Sans, Arial, sans-serif";
+  color: #00b39b;
+  font-size: 2.125rem;
+  margin: 2%;
+}
+#introduction div p {
+  /* line-height: 1.75; */
+  font-weight: 400;
+  color: gray;
+  line-height: 1.5;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  #introduction div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #introduction div p {
+    width: 300px;
+    /* color: red; */
+  }
+}
+/* ------------------------------------------- */
+/* countriues part CSS */
+#countries {
+  /* 1step : postions and alignements: using flexBox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* step 2: box model */
+  margin: 2% 10%;
+  margin-bottom: 100px;
+}
+.country {
+  margin-bottom: 2%;
+  border-radius: 2%;
+}
+.country img {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.country div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.country div {
+  padding: 4%;
+}
+.country div p {
+  color: gray;
+}
+.country div button {
+  color: white;
+  background-color: blue;
+  padding: 2%;
+}
+.country:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+button {
+  text-align: center;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+}
+#lastbutton {
+  margin-bottom: 20px;
+  position: absolute;
+
+  transform: translate(-50%, -140%);
+  left: 50%;
+}
+#section001 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
